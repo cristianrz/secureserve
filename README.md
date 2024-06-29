@@ -8,7 +8,22 @@ generated password.
 ## Prerequisites
 
 - `mkcert`
+
+```sh
+wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-linux-amd64 -O mkcert
+chmod +x mkcert
+mv mkcert ~/.local/bin/
+```
+
 - `filebrowser`
+
+```sh
+cd $(mktemp -d)
+wget https://github.com/filebrowser/filebrowser/releases/download/v2.30.0/linux-amd64-filebrowser.tar.gz
+tar xzvf linux-amd64-filebrowser.tar.gz
+chmod +x filebrowser
+sudo mv filebrowser /usr/local/bin/
+```
 
 ## Installation
 
@@ -17,7 +32,7 @@ To install SecureServe to `~/.local/bin`:
 1. Download the script:
 
 ```sh
-curl -o secureserve.sh https://example.com/path/to/secureserve.sh
+wget https://raw.githubusercontent.com/cristianrz/secureserve/main/secureserve.sh -O secureserve.sh
 ```
 
 2. Make the script executable:
