@@ -10,6 +10,34 @@ generated password.
 - `mkcert`
 - `filebrowser`
 
+## Installation
+
+To install SecureServe to `~/.local/bin`:
+
+1. Download the script:
+
+```sh
+curl -o secureserve.sh https://example.com/path/to/secureserve.sh
+```
+
+2. Make the script executable:
+
+```sh
+chmod +x secureserve.sh
+```
+
+3. Move the script to `~/.local/bin`:
+
+```sh
+mv secureserve.sh ~/.local/bin/secureserve
+```
+
+Ensure `~/.local/bin` is in your `PATH`:
+
+```sh
+export PATH=$PATH:$HOME/.local/bin
+```
+
 ## Usage
 
 Set the DIRECTORY environment variable (defaults to current directory) and run the script:
